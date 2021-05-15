@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.fragments.PlasmaFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/donation_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONATIONS" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/request_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REQUESTS" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout"
+        android:clickable="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        />
+    <View
+        android:id="@+id/shadowView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F2FFFFFF"
+        android:alpha="0.8"
+        android:clickable="true"
+        android:visibility="invisible" />
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tint="@android:color/white">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_add"
+        app:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/requestbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:tint="@android:color/white"
+        android:src="@drawable/ic_receive"
+        app:layout_constraintBottom_toTopOf="@+id/addbtn"
+        app:layout_constraintEnd_toEndOf="@+id/addbtn" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/donatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        app:tint="@android:color/white"
+        android:src="@drawable/ic_send"
+        app:layout_constraintBottom_toTopOf="@+id/requestbtn"
+        app:layout_constraintEnd_toEndOf="@+id/requestbtn" />
+
+    <TextView
+        android:id="@+id/donateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/fab_text_bg"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="Donate"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/donatebtn"
+        app:layout_constraintEnd_toStartOf="@+id/donatebtn"
+        app:layout_constraintTop_toTopOf="@+id/donatebtn" />
+
+    <TextView
+        android:id="@+id/requestText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/fab_text_bg"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="Request"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/requestbtn"
+        app:layout_constraintEnd_toStartOf="@+id/requestbtn"
+        app:layout_constraintTop_toTopOf="@+id/requestbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

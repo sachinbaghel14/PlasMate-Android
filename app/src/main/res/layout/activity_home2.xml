@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--for bottem navigation icon tittle see the menu/nav_manu.xml-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottem_navigation"/>
+
+<!--bottem navigation title and icons are from menu/nav_menu-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottem_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/design_default_color_primary"
+        app:itemIconTint="@drawable/nav_item_color"
+        app:itemTextColor="@drawable/nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/nav_menu" />
+
+
+</RelativeLayout>

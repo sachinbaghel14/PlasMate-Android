@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/list_parent_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EDEDED"
+    android:padding="15dp"
+    android:elevation="6dp"
+    >
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_account_circle"
+        android:drawableLeft="@drawable/ic_account_circle"
+        android:drawableTint="#42000000"
+        android:drawablePadding="5dp"
+        android:text="Full Name"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/person_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/person_name"
+        android:text="nameabc@gmail.com"
+        android:textSize="18sp"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawableTint="#42000000"
+        android:drawablePadding="5dp"/>
+    <TextView
+        android:id="@+id/person_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/person_email"
+        android:text="9876543210"
+        android:textSize="18sp"
+        android:drawableStart="@drawable/ic_call"
+        android:drawableLeft="@drawable/ic_call"
+        android:drawableTint="#42000000"
+        android:drawablePadding="5dp"/>
+
+    <TextView
+        android:id="@+id/person_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/person_no"
+        android:text="State/City"
+        android:textSize="18sp"
+        android:drawableStart="@drawable/ic_location"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawableTint="#42000000"
+        android:drawablePadding="5dp"/>
+
+    <ImageView
+        android:id="@+id/bld_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_invert_colors" />
+
+
+</RelativeLayout>
