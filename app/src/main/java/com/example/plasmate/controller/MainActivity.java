@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(mainIntent);
                     finish();
                 }else{
-                    Intent mainIntent = new Intent(MainActivity.this, LoginActivitty.class);
+                    Intent mainIntent = new Intent(MainActivity.this, FirstActivity.class);
                     startActivity(mainIntent);
                     finish();
                 }

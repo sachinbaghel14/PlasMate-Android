@@ -15,9 +15,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity {
 
-
+    private static final String TAG = "HomeFragment";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().setTitle("Home");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home2);
 
@@ -38,21 +39,27 @@ public class HomeActivity extends AppCompatActivity {
 
                     switch(item.getItemId()){
                         case R.id.ic_plasma:
-                            Log.i("selected", "plasma");
+                            Log.i(TAG, "selected plasma");
                             selectedFragment = new PlasmaFragment();
+                            getSupportActionBar().setTitle("Home");
+//                            getSupportActionBar().setHomeButtonEnabled(false);
+//                            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
                             break;
                         case R.id.ic_news:
-                            Log.i("selected", "news");
+                            Log.i(TAG, "selected news");
                             break;
                         case R.id.ic_resources:
-                            Log.i("selected", "resources");
+                            Log.i(TAG, "selected resources");
                             break;
                         case R.id.ic_supplies:
-                            Log.i("selected", "supplies");
+                            Log.i(TAG, "selected supplies");
                             break;
                         case R.id.ic_profile:
-                            Log.i("selected", "profile");
+                            Log.i(TAG, "selected profile");
                             selectedFragment = new ProfileFragment();
+                            getSupportActionBar().setTitle("Profile");
+//                            getSupportActionBar().setHomeButtonEnabled(true);
+//                            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
                             break;
                     }
                     //to show the selected fragment
@@ -61,4 +68,14 @@ public class HomeActivity extends AppCompatActivity {
                     return true;
                 }
             };
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        Log.i("back", "back button" );
+//        switch (item.getItemId()){
+//            case android.R.id.home:
+//                getSupportFragmentManager().popBackStack();
+//                return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 }

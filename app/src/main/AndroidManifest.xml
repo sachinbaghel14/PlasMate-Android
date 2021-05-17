@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlasMate"
         android:usesCleartextTraffic="true">
-        <activity android:name=".controller.OnboardingActivity"></activity>
+        <activity android:name=".controller.FirstActivity"></activity>
+        <activity android:name=".controller.EditProfileActivity" />
+        <activity android:name=".controller.OnboardingActivity" />
         <activity android:name=".controller.HomeActivity" />
         <activity android:name=".controller.LoginActivitty" />
         <activity android:name=".controller.MainActivity">

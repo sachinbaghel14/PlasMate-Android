@@ -18,13 +18,13 @@ public class PlasmaDataModel {
 
         try{
             PlasmaDataModel plasmaData = new PlasmaDataModel();
-            JSONArray cast = jsonObject.getJSONArray("abridged_cast");
+            JSONArray cast = jsonObject.getJSONArray("plasma_list");
             for (int i=0; i<cast.length(); i++) {
-                JSONObject actor = cast.getJSONObject(i);
-                String name = actor.getString("name");
-                String email = actor.getString("name");
-                String phoneNo = actor.getString("name");
-                String location = actor.getString("name");
+                JSONObject plasmaList = cast.getJSONObject(i);
+                String name = plasmaList.getString("Name1");
+                String email = plasmaList.getString("EmailId");
+                String phoneNo = plasmaList.getString("PhoneNo");
+                String location = plasmaList.getString("City");
                 plasmaData.mNames.add(name);
                 plasmaData.mEmails.add(email);
                 plasmaData.mPhoneNos.add(phoneNo);
@@ -37,4 +37,5 @@ public class PlasmaDataModel {
             return null;
         }
     }
+
 }
