@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "846326600322",
+    "project_id": "visitron-3a4f3",
+    "storage_bucket": "visitron-3a4f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846326600322:android:8ff84464bcb848dcd51a9b",
+        "android_client_info": {
+          "package_name": "com.example.plasmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846326600322-prl5d3a96r0kkk7ersntva9gq027lq9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmFPGt_PuoXzS9QJmkraBfevcYqHtPJ3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846326600322-prl5d3a96r0kkk7ersntva9gq027lq9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846326600322:android:a9983046b9963c12d51a9b",
+        "android_client_info": {
+          "package_name": "com.example.sbsac.visitron"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846326600322-prl5d3a96r0kkk7ersntva9gq027lq9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmFPGt_PuoXzS9QJmkraBfevcYqHtPJ3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846326600322-prl5d3a96r0kkk7ersntva9gq027lq9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
